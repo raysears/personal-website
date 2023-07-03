@@ -1,0 +1,37 @@
+---
+import me from '@assets/images/raysears.png';
+import { Image } from '@astrojs/image/components';
+// import Button from '@components/ui/Button.astro';
+---
+
+<section
+	data-testid="hero"
+	class="flex h-screen flex-col-reverse items-center justify-center text-center lg:flex-row"
+>
+	<div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
+		<div>
+			<h1 class="mb-10 font-bold font-sans text-3xl text-black dark:text-white lg:text-5xl">
+				Hi, my name is <span class="text-orange">Ray Sears</span>
+			</h1>
+			<p class="mb-10 text-black dark:text-white">
+				I'm a full-stack developer based in the United States. I
+				specialize in building functional and maintainable code by
+				utilizing cutting-edge proompt engineering strategies.
+			</p>
+		</div>
+		<!-- <div class="mb-10">
+			<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">Learn more</Button>
+		</div> -->
+	</div>
+	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
+		<Image
+			src={me}
+			alt="headshot of Ray Sears"
+			format="png"
+			width={400}
+			height={600}
+			loading="eager"
+			class="rounded-full"
+		/>
+	</div>
+</section>
