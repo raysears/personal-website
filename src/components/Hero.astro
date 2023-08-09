@@ -1,7 +1,7 @@
 ---
 import me from '@assets/images/raysears.png';
 import { Image } from '@astrojs/image/components';
-// import Button from '@components/ui/Button.astro';
+import Button from '@components/ui/Button.astro';
 ---
 
 <section
@@ -14,14 +14,19 @@ import { Image } from '@astrojs/image/components';
 				Hi, my name is <span class="text-orange">Ray Sears</span>
 			</h1>
 			<p class="mb-10 text-black dark:text-white">
-				I'm a full-stack developer based in the United States. I
-				specialize in building functional and maintainable code by
-				utilizing cutting-edge proompt engineering strategies.
+				I'm a full-stack software engineer and 4th year Computer Science student at Georgia Tech. 
+				I specialize in building functional and maintainable code by
+				utilizing cutting-edge prompt engineering strategies.
 			</p>
 		</div>
-		<!-- <div class="mb-10">
-			<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">Learn more</Button>
-		</div> -->
+		<div class="mb-10">
+			<!-- button to view resume in a new tab -->
+			<Button style={'primary'} size={'lg'} class={'flex'} name="view resume">
+				<a href="https://drive.google.com/file/d/1tAfytSbI7y5UWHka49omqQV7OPtVsb9Z/view?usp=sharing" target="_blank">
+				  View Resume
+				</a>
+			  </Button>
+		</div>
 	</div>
 	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
 		<Image
